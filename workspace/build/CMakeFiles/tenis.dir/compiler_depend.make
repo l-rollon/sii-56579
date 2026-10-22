@@ -354,11 +354,16 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
+  /usr/include/fcntl.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/linux/openat2.h \
   /usr/include/linux/posix_types.h \
   /usr/include/linux/sched/types.h \
+  /usr/include/linux/stat.h \
   /usr/include/linux/stddef.h \
   /usr/include/linux/types.h \
   /usr/include/locale.h \
@@ -372,6 +377,7 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
@@ -381,15 +387,21 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/x86_64-linux-gnu/asm/types.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
   /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
   /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -400,12 +412,17 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/openat2.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/statx.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -413,6 +430,7 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -435,8 +453,11 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -445,6 +466,7 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -468,6 +490,7 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o: /home/lrollon/laura/sii-56579/workspace/sr
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/stat.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
@@ -1460,8 +1483,6 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
 
-/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
-
 /usr/lib/x86_64-linux-gnu/libc.so:
 
 /usr/lib/x86_64-linux-gnu/libGLU.so:
@@ -1472,9 +1493,35 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /lib64/ld-linux-x86-64.so.2:
 
+/home/lrollon/laura/sii-56579/workspace/src/Vector2D.cpp:
+
+/home/lrollon/laura/sii-56579/workspace/src/Plano.cpp:
+
+/usr/include/x86_64-linux-gnu/sys/stat.h:
+
 /home/lrollon/laura/sii-56579/workspace/src/tenis.cpp:
 
-/home/lrollon/laura/sii-56579/workspace/src/Vector2D.cpp:
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
+
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/stdlib.h:
 
@@ -1497,6 +1544,8 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 /usr/include/c++/15/system_error:
 
 /usr/include/c++/15/string:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/c++/15/cmath:
 
@@ -1525,6 +1574,8 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 /usr/include/c++/15/ext/atomicity.h:
 
 /usr/include/c++/15/exception:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
 /usr/include/c++/15/cwchar:
 
@@ -1568,7 +1619,13 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /usr/include/c++/15/bits/utility.h:
 
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
+
+/usr/include/linux/close_range.h:
+
 /usr/include/c++/15/bits/string_view.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/c++/15/bits/streambuf_iterator.h:
 
@@ -1582,9 +1639,11 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/c++/15/bits/istream.tcc:
+/home/lrollon/laura/sii-56579/workspace/src/Raqueta.cpp:
 
-/usr/include/c++/15/bits/char_traits.h:
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/c++/15/bits/istream.tcc:
 
 /usr/lib/x86_64-linux-gnu/libmvec.so.1:
 
@@ -1636,8 +1695,6 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /home/lrollon/laura/sii-56579/workspace/include/Esfera.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/c++/15/streambuf:
 
 /usr/include/c++/15/bits/cpp_type_traits.h:
@@ -1653,6 +1710,8 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 /usr/include/c++/15/bits/concept_check.h:
 
 /usr/include/c++/15/bits/version.h:
+
+/usr/include/linux/stat.h:
 
 /usr/include/KHR/khrplatform.h:
 
@@ -1708,6 +1767,8 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /usr/include/c++/15/bits/cxxabi_init_exception.h:
 
+/usr/include/x86_64-linux-gnu/bits/openat2.h:
+
 /usr/include/features.h:
 
 /usr/include/c++/15/debug/debug.h:
@@ -1728,9 +1789,11 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/c++/15/bits/locale_classes.tcc:
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/usr/include/c++/15/bits/hash_bytes.h:
+
+/usr/include/c++/15/bits/locale_classes.tcc:
 
 /usr/include/c++/15/bits/memoryfwd.h:
 
@@ -1741,8 +1804,6 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 /usr/include/c++/15/bits/postypes.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
 /usr/include/c++/15/bits/localefwd.h:
 
@@ -1770,13 +1831,15 @@ CMakeFiles/tenis.dir/src/Plano.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/home/lrollon/laura/sii-56579/workspace/include/glut.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx.h:
+
+/usr/include/unistd.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1831,6 +1894,8 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o:
 /usr/lib/x86_64-linux-gnu/Scrt1.o:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/time.h:
 
@@ -1890,9 +1955,9 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/usr/include/c++/15/tr1/legendre_function.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/15/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
@@ -1905,6 +1970,10 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o:
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/c++/15/bits/vector.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/stdc-predef.h:
 
@@ -1988,26 +2057,26 @@ CMakeFiles/tenis.dir/src/Mundo.cpp.o:
 
 /usr/include/c++/15/tr1/special_function_util.h:
 
+/usr/include/fcntl.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/linux/falloc.h:
+
+/usr/include/linux/openat2.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/home/lrollon/laura/sii-56579/workspace/include/glut.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/c++/15/bits/char_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
+
 /usr/include/c++/15/bits/stl_pair.h:
 
 /usr/include/c++/15/bits/stl_bvector.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/c++/15/bits/hash_bytes.h:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/home/lrollon/laura/sii-56579/workspace/src/Plano.cpp:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/home/lrollon/laura/sii-56579/workspace/src/Raqueta.cpp:

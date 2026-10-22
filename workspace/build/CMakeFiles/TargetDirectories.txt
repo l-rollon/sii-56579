@@ -1,3 +1,4 @@
 /home/lrollon/laura/sii-56579/workspace/build/CMakeFiles/tenis.dir
+/home/lrollon/laura/sii-56579/workspace/build/CMakeFiles/logger.dir
 /home/lrollon/laura/sii-56579/workspace/build/CMakeFiles/edit_cache.dir
 /home/lrollon/laura/sii-56579/workspace/build/CMakeFiles/rebuild_cache.dir
