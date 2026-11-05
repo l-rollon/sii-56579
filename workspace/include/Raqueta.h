@@ -2,6 +2,9 @@
 //
 //////////////////////////////////////////////////////////////////////
 
+#ifndef RAQUETA_H
+#define RAQUETA_H
+
 #include "Plano.h"
 #include "Vector2D.h"
 
@@ -15,3 +18,5 @@ public:
 
 	void Mueve(float t);
 };
+
+#endif

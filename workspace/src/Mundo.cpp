@@ -14,6 +14,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/mman.h>
 
 
 //////////////////////////////////////////////////////////////////////
@@ -28,6 +29,7 @@ CMundo::CMundo()
 CMundo::~CMundo()
 {
     close(fifo_fd);
+    close(shm_fd);
 }
 
 void CMundo::InitGL()
@@ -120,7 +122,21 @@ void CMundo::OnDraw()
 }
 
 void CMundo::OnTimer(int value)
-{	
+{		
+	// Actualizar datos hacia la memoria compartida 
+	datos->esfera = esfera;
+	datos->raqueta1 = jugador1;
+
+	// Interpretar la acción que decide el bot
+	if (datos->accion == 1) {
+		OnKeyboardDown('w', 0, 0);
+	} else if (datos->accion == -1) {
+		OnKeyboardDown('s', 0, 0);
+	} else {
+		// Opcional: detener velocidad vertical
+		jugador1.velocidad.y = 0;
+	}
+
 	jugador1.Mueve(0.025f);
 	jugador2.Mueve(0.025f);
 	esfera.Mueve(0.025f);
@@ -169,7 +185,7 @@ void CMundo::OnTimer(int value)
 		
 	
 		close(fifo_fd);
-		
+		munmap(datos, sizeof(DatosMemCompartida));
 		
 		exit(0);
 	}
@@ -228,4 +244,26 @@ void CMundo::Init()
             if (fifo_fd == -1) {
                perror("Error al abrir la FIFO en modo escritura");
             }
+
+	// ---MEMORIA COMPARTIDA 
+	shm_unlink("/shm_tenis"); 
+	shm_fd = shm_open("/shm_tenis", O_CREAT | O_RDWR, 0666);
+	if (shm_fd == -1) {
+		perror("Error al abrir el fichero de memoria compartida");
+	}
+	if (ftruncate(shm_fd, sizeof(DatosMemCompartida)) == -1) {
+		perror("Error al dar tamaño al fichero de memoria compartida");
+	}
+	datos = (DatosMemCompartida *)mmap(NULL, sizeof(DatosMemCompartida), PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+	if (datos == MAP_FAILED) {
+		perror("Error en mmap");
+	}
+	close(shm_fd); 
+	// Inicializar valores 
+	datos->esfera = esfera;
+	datos->raqueta1 = jugador1;
+	datos->accion = 0;
+	// -----------------------------------------------------------------------
 }
+        
+
