@@ -3,6 +3,7 @@ logger: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
   CMakeFiles/logger.dir/src/logger.cpp.o \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/librt.a \
   /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/libm.so \
@@ -38,6 +39,8 @@ logger: \
 /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
 
 CMakeFiles/logger.dir/src/logger.cpp.o:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/librt.a:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
 
