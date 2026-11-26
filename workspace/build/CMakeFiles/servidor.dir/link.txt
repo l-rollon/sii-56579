@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/servidor.dir/link.d CMakeFiles/servidor.dir/src/servidor.cpp.o CMakeFiles/servidor.dir/src/MundoServidor.cpp.o CMakeFiles/servidor.dir/src/Esfera.cpp.o CMakeFiles/servidor.dir/src/Plano.cpp.o CMakeFiles/servidor.dir/src/Raqueta.cpp.o CMakeFiles/servidor.dir/src/Vector2D.cpp.o -o servidor  -lglut -lGL -lGLU -lpthread -lrt

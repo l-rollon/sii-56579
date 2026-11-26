@@ -1,6 +1,4 @@
-// Mundo.h: interface for the CMundo class.
-//
-//////////////////////////////////////////////////////////////////////
+
 
 #if !defined(AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_)
 #define AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_
@@ -16,12 +14,12 @@
 #include "Raqueta.h"
 #include "DatosMemCompartida.h"
 
-class CMundo  
+class MundoCliente
 {
 public:
 	void Init();
-	CMundo();
-	virtual ~CMundo();	
+	MundoCliente();
+	virtual ~MundoCliente();	
 	
 	void InitGL();	
 	void OnKeyboardDown(unsigned char key, int x, int y);
@@ -37,10 +35,15 @@ public:
 
 	int puntos1;
 	int puntos2;
-	int fifo_fd;
+	int fifo_coords_fd;
+        int fifo_teclas_fd;
 	
 	DatosMemCompartida *datos;
 	int shm_fd;
 };
 
 #endif // !defined(AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_)
+
+
+
+

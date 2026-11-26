@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tenis
+# Target rules for targets named servidor
 
 # Build rule for target.
-tenis: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tenis
-.PHONY : tenis
+servidor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 servidor
+.PHONY : servidor
 
 # fast build rule for target.
-tenis/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/build
-.PHONY : tenis/fast
+servidor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/build
+.PHONY : servidor/fast
+
+#=============================================================================
+# Target rules for targets named cliente
+
+# Build rule for target.
+cliente: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cliente
+.PHONY : cliente
+
+# fast build rule for target.
+cliente/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/build
+.PHONY : cliente/fast
 
 #=============================================================================
 # Target rules for targets named logger
@@ -160,7 +173,8 @@ src/Esfera.o: src/Esfera.cpp.o
 
 # target to build an object file
 src/Esfera.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Esfera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Esfera.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Esfera.cpp.o
 .PHONY : src/Esfera.cpp.o
 
 src/Esfera.i: src/Esfera.cpp.i
@@ -168,7 +182,8 @@ src/Esfera.i: src/Esfera.cpp.i
 
 # target to preprocess a source file
 src/Esfera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Esfera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Esfera.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Esfera.cpp.i
 .PHONY : src/Esfera.cpp.i
 
 src/Esfera.s: src/Esfera.cpp.s
@@ -176,39 +191,65 @@ src/Esfera.s: src/Esfera.cpp.s
 
 # target to generate assembly for a file
 src/Esfera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Esfera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Esfera.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Esfera.cpp.s
 .PHONY : src/Esfera.cpp.s
 
-src/Mundo.o: src/Mundo.cpp.o
-.PHONY : src/Mundo.o
+src/MundoCliente.o: src/MundoCliente.cpp.o
+.PHONY : src/MundoCliente.o
 
 # target to build an object file
-src/Mundo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Mundo.cpp.o
-.PHONY : src/Mundo.cpp.o
+src/MundoCliente.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/MundoCliente.cpp.o
+.PHONY : src/MundoCliente.cpp.o
 
-src/Mundo.i: src/Mundo.cpp.i
-.PHONY : src/Mundo.i
+src/MundoCliente.i: src/MundoCliente.cpp.i
+.PHONY : src/MundoCliente.i
 
 # target to preprocess a source file
-src/Mundo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Mundo.cpp.i
-.PHONY : src/Mundo.cpp.i
+src/MundoCliente.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/MundoCliente.cpp.i
+.PHONY : src/MundoCliente.cpp.i
 
-src/Mundo.s: src/Mundo.cpp.s
-.PHONY : src/Mundo.s
+src/MundoCliente.s: src/MundoCliente.cpp.s
+.PHONY : src/MundoCliente.s
 
 # target to generate assembly for a file
-src/Mundo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Mundo.cpp.s
-.PHONY : src/Mundo.cpp.s
+src/MundoCliente.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/MundoCliente.cpp.s
+.PHONY : src/MundoCliente.cpp.s
+
+src/MundoServidor.o: src/MundoServidor.cpp.o
+.PHONY : src/MundoServidor.o
+
+# target to build an object file
+src/MundoServidor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/MundoServidor.cpp.o
+.PHONY : src/MundoServidor.cpp.o
+
+src/MundoServidor.i: src/MundoServidor.cpp.i
+.PHONY : src/MundoServidor.i
+
+# target to preprocess a source file
+src/MundoServidor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/MundoServidor.cpp.i
+.PHONY : src/MundoServidor.cpp.i
+
+src/MundoServidor.s: src/MundoServidor.cpp.s
+.PHONY : src/MundoServidor.s
+
+# target to generate assembly for a file
+src/MundoServidor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/MundoServidor.cpp.s
+.PHONY : src/MundoServidor.cpp.s
 
 src/Plano.o: src/Plano.cpp.o
 .PHONY : src/Plano.o
 
 # target to build an object file
 src/Plano.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Plano.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Plano.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Plano.cpp.o
 .PHONY : src/Plano.cpp.o
 
 src/Plano.i: src/Plano.cpp.i
@@ -216,7 +257,8 @@ src/Plano.i: src/Plano.cpp.i
 
 # target to preprocess a source file
 src/Plano.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Plano.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Plano.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Plano.cpp.i
 .PHONY : src/Plano.cpp.i
 
 src/Plano.s: src/Plano.cpp.s
@@ -224,7 +266,8 @@ src/Plano.s: src/Plano.cpp.s
 
 # target to generate assembly for a file
 src/Plano.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Plano.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Plano.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Plano.cpp.s
 .PHONY : src/Plano.cpp.s
 
 src/Raqueta.o: src/Raqueta.cpp.o
@@ -232,7 +275,8 @@ src/Raqueta.o: src/Raqueta.cpp.o
 
 # target to build an object file
 src/Raqueta.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Raqueta.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Raqueta.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Raqueta.cpp.o
 .PHONY : src/Raqueta.cpp.o
 
 src/Raqueta.i: src/Raqueta.cpp.i
@@ -240,7 +284,8 @@ src/Raqueta.i: src/Raqueta.cpp.i
 
 # target to preprocess a source file
 src/Raqueta.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Raqueta.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Raqueta.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Raqueta.cpp.i
 .PHONY : src/Raqueta.cpp.i
 
 src/Raqueta.s: src/Raqueta.cpp.s
@@ -248,7 +293,8 @@ src/Raqueta.s: src/Raqueta.cpp.s
 
 # target to generate assembly for a file
 src/Raqueta.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Raqueta.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Raqueta.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Raqueta.cpp.s
 .PHONY : src/Raqueta.cpp.s
 
 src/Vector2D.o: src/Vector2D.cpp.o
@@ -256,7 +302,8 @@ src/Vector2D.o: src/Vector2D.cpp.o
 
 # target to build an object file
 src/Vector2D.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Vector2D.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Vector2D.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Vector2D.cpp.o
 .PHONY : src/Vector2D.cpp.o
 
 src/Vector2D.i: src/Vector2D.cpp.i
@@ -264,7 +311,8 @@ src/Vector2D.i: src/Vector2D.cpp.i
 
 # target to preprocess a source file
 src/Vector2D.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Vector2D.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Vector2D.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Vector2D.cpp.i
 .PHONY : src/Vector2D.cpp.i
 
 src/Vector2D.s: src/Vector2D.cpp.s
@@ -272,7 +320,8 @@ src/Vector2D.s: src/Vector2D.cpp.s
 
 # target to generate assembly for a file
 src/Vector2D.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/Vector2D.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/Vector2D.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/Vector2D.cpp.s
 .PHONY : src/Vector2D.cpp.s
 
 src/bot.o: src/bot.cpp.o
@@ -299,6 +348,30 @@ src/bot.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bot.dir/build.make CMakeFiles/bot.dir/src/bot.cpp.s
 .PHONY : src/bot.cpp.s
 
+src/cliente.o: src/cliente.cpp.o
+.PHONY : src/cliente.o
+
+# target to build an object file
+src/cliente.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/cliente.cpp.o
+.PHONY : src/cliente.cpp.o
+
+src/cliente.i: src/cliente.cpp.i
+.PHONY : src/cliente.i
+
+# target to preprocess a source file
+src/cliente.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/cliente.cpp.i
+.PHONY : src/cliente.cpp.i
+
+src/cliente.s: src/cliente.cpp.s
+.PHONY : src/cliente.s
+
+# target to generate assembly for a file
+src/cliente.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cliente.dir/build.make CMakeFiles/cliente.dir/src/cliente.cpp.s
+.PHONY : src/cliente.cpp.s
+
 src/logger.o: src/logger.cpp.o
 .PHONY : src/logger.o
 
@@ -323,29 +396,29 @@ src/logger.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/logger.dir/build.make CMakeFiles/logger.dir/src/logger.cpp.s
 .PHONY : src/logger.cpp.s
 
-src/tenis.o: src/tenis.cpp.o
-.PHONY : src/tenis.o
+src/servidor.o: src/servidor.cpp.o
+.PHONY : src/servidor.o
 
 # target to build an object file
-src/tenis.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/tenis.cpp.o
-.PHONY : src/tenis.cpp.o
+src/servidor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/servidor.cpp.o
+.PHONY : src/servidor.cpp.o
 
-src/tenis.i: src/tenis.cpp.i
-.PHONY : src/tenis.i
+src/servidor.i: src/servidor.cpp.i
+.PHONY : src/servidor.i
 
 # target to preprocess a source file
-src/tenis.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/tenis.cpp.i
-.PHONY : src/tenis.cpp.i
+src/servidor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/servidor.cpp.i
+.PHONY : src/servidor.cpp.i
 
-src/tenis.s: src/tenis.cpp.s
-.PHONY : src/tenis.s
+src/servidor.s: src/servidor.cpp.s
+.PHONY : src/servidor.s
 
 # target to generate assembly for a file
-src/tenis.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tenis.dir/build.make CMakeFiles/tenis.dir/src/tenis.cpp.s
-.PHONY : src/tenis.cpp.s
+src/servidor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/servidor.dir/build.make CMakeFiles/servidor.dir/src/servidor.cpp.s
+.PHONY : src/servidor.cpp.s
 
 # Help Target
 help:
@@ -356,14 +429,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... bot"
+	@echo "... cliente"
 	@echo "... logger"
-	@echo "... tenis"
+	@echo "... servidor"
 	@echo "... src/Esfera.o"
 	@echo "... src/Esfera.i"
 	@echo "... src/Esfera.s"
-	@echo "... src/Mundo.o"
-	@echo "... src/Mundo.i"
-	@echo "... src/Mundo.s"
+	@echo "... src/MundoCliente.o"
+	@echo "... src/MundoCliente.i"
+	@echo "... src/MundoCliente.s"
+	@echo "... src/MundoServidor.o"
+	@echo "... src/MundoServidor.i"
+	@echo "... src/MundoServidor.s"
 	@echo "... src/Plano.o"
 	@echo "... src/Plano.i"
 	@echo "... src/Plano.s"
@@ -376,12 +453,15 @@ help:
 	@echo "... src/bot.o"
 	@echo "... src/bot.i"
 	@echo "... src/bot.s"
+	@echo "... src/cliente.o"
+	@echo "... src/cliente.i"
+	@echo "... src/cliente.s"
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
-	@echo "... src/tenis.o"
-	@echo "... src/tenis.i"
-	@echo "... src/tenis.s"
+	@echo "... src/servidor.o"
+	@echo "... src/servidor.i"
+	@echo "... src/servidor.s"
 .PHONY : help
 
 

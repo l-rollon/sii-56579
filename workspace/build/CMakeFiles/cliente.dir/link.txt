@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/cliente.dir/link.d CMakeFiles/cliente.dir/src/cliente.cpp.o CMakeFiles/cliente.dir/src/MundoCliente.cpp.o CMakeFiles/cliente.dir/src/Esfera.cpp.o CMakeFiles/cliente.dir/src/Plano.cpp.o CMakeFiles/cliente.dir/src/Raqueta.cpp.o CMakeFiles/cliente.dir/src/Vector2D.cpp.o -o cliente  -lglut -lGL -lGLU -lpthread -lrt

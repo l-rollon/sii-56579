@@ -1,2 +1,3 @@
 -PRACTICA 2: se ha modificado el logger y mundo para que el juego cree una FIFO y al llegar la partida de tenis a 3 puntos se cierre el programa
 - PRACTICA 3: se ha realizado la comunicacion por memoria y la creacion de un bot. 
+- PRACTICA 4: se crean copias de mundo y tenis, una para servidor y otra cliente. Se modifican los codigos para que cliente haga una cosa y servidor otra segun lo explicado en la practica. 
